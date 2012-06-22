@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metin2ServerEmulatorCommon", "Metin2ServerEmulatorCommon\Metin2ServerEmulatorCommon.csproj", "{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metin2AuthServerEmulator", "Metin2AuthServerEmulator\Metin2AuthServerEmulator.csproj", "{09237B37-E695-4ECF-89F8-22B04C10A1F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metin2KeyForcer", "Metin2KeyStat\Metin2KeyForcer.csproj", "{93E44128-BB5B-49A6-9A70-598993D610CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metin2GameServerEmulator", "Metin2GameServerEmulator\Metin2GameServerEmulator.csproj", "{47CF2600-7456-44D1-B640-7A619837708D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metin2PacketDumper", "Metin2PacketDumper\Metin2PacketDumper.csproj", "{15938551-ED03-4619-A4D2-7C7513341DE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E4F662AA-910B-47B2-8EC6-55956A02F701}"
+	ProjectSection(SolutionItems) = preProject
+		COPYING = COPYING
+		Metin2ServerEmulator.sln.DotSettings = Metin2ServerEmulator.sln.DotSettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}.Debug|x86.ActiveCfg = Debug|x86
+		{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}.Debug|x86.Build.0 = Debug|x86
+		{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}.Release|x86.ActiveCfg = Release|x86
+		{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}.Release|x86.Build.0 = Release|x86
+		{09237B37-E695-4ECF-89F8-22B04C10A1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09237B37-E695-4ECF-89F8-22B04C10A1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09237B37-E695-4ECF-89F8-22B04C10A1F0}.Debug|x86.ActiveCfg = Debug|x86
+		{09237B37-E695-4ECF-89F8-22B04C10A1F0}.Debug|x86.Build.0 = Debug|x86
+		{09237B37-E695-4ECF-89F8-22B04C10A1F0}.Release|Any CPU.ActiveCfg = Release|x86
+		{09237B37-E695-4ECF-89F8-22B04C10A1F0}.Release|x86.ActiveCfg = Release|x86
+		{09237B37-E695-4ECF-89F8-22B04C10A1F0}.Release|x86.Build.0 = Release|x86
+		{93E44128-BB5B-49A6-9A70-598993D610CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93E44128-BB5B-49A6-9A70-598993D610CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93E44128-BB5B-49A6-9A70-598993D610CA}.Debug|x86.ActiveCfg = Debug|x86
+		{93E44128-BB5B-49A6-9A70-598993D610CA}.Debug|x86.Build.0 = Debug|x86
+		{93E44128-BB5B-49A6-9A70-598993D610CA}.Release|Any CPU.ActiveCfg = Release|x86
+		{93E44128-BB5B-49A6-9A70-598993D610CA}.Release|x86.ActiveCfg = Release|x86
+		{93E44128-BB5B-49A6-9A70-598993D610CA}.Release|x86.Build.0 = Release|x86
+		{47CF2600-7456-44D1-B640-7A619837708D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CF2600-7456-44D1-B640-7A619837708D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CF2600-7456-44D1-B640-7A619837708D}.Debug|x86.ActiveCfg = Debug|x86
+		{47CF2600-7456-44D1-B640-7A619837708D}.Debug|x86.Build.0 = Debug|x86
+		{47CF2600-7456-44D1-B640-7A619837708D}.Release|Any CPU.ActiveCfg = Release|x86
+		{47CF2600-7456-44D1-B640-7A619837708D}.Release|x86.ActiveCfg = Release|x86
+		{47CF2600-7456-44D1-B640-7A619837708D}.Release|x86.Build.0 = Release|x86
+		{15938551-ED03-4619-A4D2-7C7513341DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15938551-ED03-4619-A4D2-7C7513341DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15938551-ED03-4619-A4D2-7C7513341DE6}.Debug|x86.ActiveCfg = Debug|x86
+		{15938551-ED03-4619-A4D2-7C7513341DE6}.Debug|x86.Build.0 = Debug|x86
+		{15938551-ED03-4619-A4D2-7C7513341DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15938551-ED03-4619-A4D2-7C7513341DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15938551-ED03-4619-A4D2-7C7513341DE6}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
