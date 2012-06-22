@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47CF2600-7456-44D1-B640-7A619837708D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Metin2GameServerEmulator</RootNamespace>
+    <AssemblyName>Metin2GameServerEmulator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mysql.data">
+      <HintPath>..\Metin2ServerEmulatorCommon\mysqlconnector\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="DAO\CharacterDAO.cs" />
+    <Compile Include="DAO\GuildDAO.cs" />
+    <Compile Include="Game\Chat\Chat.Types.cs" />
+    <Compile Include="Network\Packets\In\CharacterChoosePacket.cs" />
+    <Compile Include="Network\Packets\In\CharacterCreatePacket.cs" />
+    <Compile Include="Network\Packets\In\LauncherNamePacket.cs" />
+    <Compile Include="Network\Packets\Out\CharacterStatsPacket.cs" />
+    <Compile Include="Network\Packets\Out\InventoryItemsPacket.cs" />
+    <Compile Include="Network\Packets\Out\ItemCreatePacket.cs" />
+    <Compile Include="Network\Packets\Out\EntitySpawnPacket.cs" />
+    <Compile Include="Network\Packets\Out\MonsterSpawnPacket.cs" />
+    <Compile Include="Network\Packets\Out\CharacterInfoPacket.cs" />
+    <Compile Include="World\Entities\Character.cs" />
+    <Compile Include="World\Entities\Entities.Types.cs" />
+    <Compile Include="World\Entities\IEntity.cs" />
+    <Compile Include="LocalNetwork\LoginServerConnection.cs" />
+    <Compile Include="Network\Client.cs" />
+    <Compile Include="Network\Client.Operations.cs" />
+    <Compile Include="Network\NetworkService.cs" />
+    <Compile Include="Network\Packets\In\GameAuthorizationPacket.cs" />
+    <Compile Include="Network\Packets\In\HandshakePacket.cs" />
+    <Compile Include="Network\Packets\Out\CharacterListPacket.cs" />
+    <Compile Include="Network\Packets\IPacket.cs" />
+    <Compile Include="Network\Packets\IPacketIn.cs" />
+    <Compile Include="Network\Packets\Out\HandshakeClosePacket.cs" />
+    <Compile Include="Network\Packets\Out\HandshakeMidPacket.cs" />
+    <Compile Include="Network\Packets\Out\HandshakeOpenPacket.cs" />
+    <Compile Include="Network\Packets\Packets.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="Services\AuthService.cs" />
+    <Compile Include="World\Entities\NPC.cs" />
+    <Compile Include="World\Guild.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Metin2ServerEmulatorCommon\Metin2ServerEmulatorCommon.csproj">
+      <Project>{210CE9A9-A973-4CEA-BC74-2E1E36CF0E53}</Project>
+      <Name>Metin2ServerEmulatorCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game\Types\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
