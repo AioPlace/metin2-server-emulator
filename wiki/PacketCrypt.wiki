@@ -24,6 +24,6 @@ This key is used to crypt packets from client to server.
 
 = Session key 2 =
 
-Well, here we *must* applaude YMIR for their such great work! We don't know how the hell this key is generated, we only know that this key *does not* travel with any packet, and so it is generated at run-time at the same time by client and server with a not-known algorithm. And yes, this is the reason because this emulator needs a KeyForcer.
+Well, here we *must* applaude YMIR for their such great work! We don't know how the hell this key is generated, we only know that this key *does not* travel within any packet, and so it is generated at run-time at the same time by client and server with a not-known algorithm. And yes, this is the reason because this emulator needs a KeyForcer.
 
 By the way, *session key 2* is used to encrypt packets from server to client.
