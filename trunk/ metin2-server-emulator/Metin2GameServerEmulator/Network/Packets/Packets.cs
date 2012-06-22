@@ -1,4 +1,4 @@
-﻿#region License
+ #region License
 
 //     This file is part of Metin 2 Server Emulator.
 // 
@@ -30,7 +30,7 @@ namespace Metin2GameServerEmulator.Network.Packets
         HandshakePacket = 0xFF
     }
 
-    internal enum OutPacketsNew
+    internal enum InPacketsNew
     {
         TextPacket = 0x01,
         HandshakeMidPacket = 0xFF,
